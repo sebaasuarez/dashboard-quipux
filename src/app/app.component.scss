@@ -1,0 +1,32 @@
+@import '../theme/variables';
+
+.main-content {
+    background-color: $gray;
+    padding-top: 2rem;
+}
+
+.navbar {
+    justify-content: flex-start;
+
+    .breadcrumb {
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+}
+
+.profile-section {
+    @media (max-width: 425px) {
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    figure {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}

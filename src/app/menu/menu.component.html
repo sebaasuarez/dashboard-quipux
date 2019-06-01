@@ -1,0 +1,29 @@
+<nav class="col-md-2 main-sidebar sidebar collapse p-0" id="collapseExample">
+    <div class="sidebar-sticky">
+      <div class="menu-logo">
+        <a class="navbar-button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-bars"></i></a>
+        <figure>
+          <img src="assets/images/quipux.png" alt="Quipux" class="img-fluid" />
+        </figure>
+      </div>
+      <span class="separator">ENTITIES</span>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+            <a href="#homeSubmenu" (click)="onClick($event)" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><svg width="24" height="24" stroke="currentColor" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase" class="svg-inline--fa fa-briefcase fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg> Empresas</a>
+            <ul class="collapse" id="homeSubmenu">
+              <li>
+                <a routerLink="/companies" routerLinkActive="active">Empresa</a>
+              </li>
+            </ul> 
+        </li>
+        <li class="nav-item">
+              <a href="#homeSubmenuArticle" (click)="onClick($event)" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><svg width="24" height="24" stroke="currentColor" aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg>  Artículos</a>
+            <ul class="collapse" id="homeSubmenuArticle">
+              <li>
+                <a routerLink="/articles" routerLinkActive="active">Artículo</a>
+              </li>
+            </ul> 
+        </li>
+      </ul>
+    </div>
+  </nav>
